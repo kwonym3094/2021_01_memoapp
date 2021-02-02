@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:id="@+id/root">
+    android:layout_height="100dp">
 
     <ImageView
         android:id="@+id/icChk"
-        android:layout_width="20dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="16dp"/>
+        app:srcCompat="@drawable/ic_chk" />
 
     <TextView
-        android:id="@+id/tvMemo"
+        android:id="@+id/itmMemo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" 기말고사 공부하기"
-        app:layout_constraintStart_toEndOf="@id/icChk"
+        android:layout_marginStart="30dp"
+        android:gravity="left|center_vertical"
+        android:paddingStart="20dp"
+        android:text="TextView"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="16sp"
-        android:layout_margin="24dp"/>
-
+        app:layout_constraintStart_toEndOf="@+id/icChk"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

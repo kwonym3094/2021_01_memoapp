@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">project_MemoList</string>
+    <string name="app_name">2021_02_memoapp</string>
     <string name="mainTitle">Memo List</string>
     <string name="mainHint">Add Memo...</string>
     <string name="add">Add</string>
